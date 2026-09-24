@@ -1,0 +1,9 @@
+.local/
+build/
+__pycache__/
+*.py[cod]
+# Installed assets and generated artifacts must remain local.
+*.wad
+*.bsp
+*.map.bak
+*.log

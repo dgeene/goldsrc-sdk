@@ -121,10 +121,12 @@ Treat reproducibility as three measurable levels: **recreatable setup** (same re
 
 ### M0 — Inspect and prove the toolchain
 
+Progress (2026-09-24): CPU build and BSP smoke test verified; see [M0 evidence](docs/m0-verification.md). Native JACK startup works. Exact editor build, manual MAP round trip and in-game acceptance remain open; M1 has not begun.
+
 - [ ] Confirm an actual native J.A.C.K. install's executable, settings location, configuration/import affordances, FGD handling and minimum dependencies. Record findings in `docs/editor-jack.md` with references to upstream docs and tested version.
-- [ ] Verify game paths and relevant WAD/FGD locations on a legitimate Linux Steam installation; account for different Steam libraries. Document which assets are mandatory for `valve` and `cstrike` separately.
-- [ ] Pin a specific compiler commit/release and verify its Linux build, license, `compile` flags, source embedding control, output paths and basic BSP. Configure distributable builds without embedded `.map` source and verify this on the generated BSP. Upstream `hltools` currently documents source embedding as its default, so its opt-out flag requires validation.
-- [ ] Record alternatives and blocker resolutions in a brief decision log. Do not implement a speculative editor configuration writer.
+- [x] Verify game paths and relevant WAD/FGD locations on a legitimate Linux Steam installation; account for different Steam libraries. Document which assets are mandatory for `valve` and `cstrike` separately.
+- [x] Pin a specific compiler commit/release and verify its Linux build, license, `compile` flags, source embedding control, output paths and basic BSP. Configure distributable builds without embedded `.map` source and verify this on the generated BSP. Upstream `hltools` currently documents source embedding as its default, so its opt-out flag requires validation.
+- [x] Record alternatives and blocker resolutions in a brief decision log. Do not implement a speculative editor configuration writer.
 
 **Exit:** command transcript for a manually edited minimal map that compiles and opens in Half-Life; known editor configuration mechanism or documented manual path.
 

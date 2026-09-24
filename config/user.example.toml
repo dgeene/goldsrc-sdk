@@ -1,0 +1,9 @@
+# Copy to .local/user.toml. Paths may contain spaces or Unicode.
+# Empty values use environment variables / defaults described in README.md.
+[paths]
+editor_path = "" # JACK installation directory, Jack, or Jack.sh
+steam_root = "" # Steam data directory (NOT the executable)
+steam_executable = "" # steam on PATH, or an explicit executable / steam.sh
+half_life_dir = "" # directory containing valve/ and cstrike/; any Steam library
+valve_fgd = "" # default: <JACK>/halflife/halflife.fgd
+cstrike_fgd = "" # default: <Half-Life>/cstrike/halflife-cs.fgd
